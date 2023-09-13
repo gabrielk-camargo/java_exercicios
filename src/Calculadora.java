@@ -22,33 +22,31 @@ public class Calculadora {
         int mathematicalExpressions = input.nextInt();
 
         switch (mathematicalExpressions) {
-            case 1:
+            case 1 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number + number2;
                 System.out.println(String.format(" A soma de %d + %d = %d", number, number2, result));
-                break;
-            case 2:
+            }
+            case 2 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number - number2;
                 System.out.println(String.format("A subtração de  %d - %d = %d ", number, number2, result));
-                break;
-            case 3:
+            }
+            case 3 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number * number2;
                 System.out.println(String.format("A multiplicação de  %d * %d = %d ", number, number2, result));
-                break;
-            case 4:
+            }
+            case 4 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number / number2;
                 System.out.println(String.format("A divisão de  %d / %d = %d ", number, number2, result));
-                break;
-            default:
-                System.out.println("Escolha inválida.");
-                break;
+            }
+            default -> System.out.println("Escolha inválida.");
         }
     }
 
