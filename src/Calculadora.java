@@ -26,25 +26,25 @@ public class Calculadora {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number + number2;
-                System.out.println(String.format(" A soma de %d + %d = %d", number, number2, result));
+                System.out.printf(" A soma de %d + %d = %d%n", number, number2, result);
             }
             case 2 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number - number2;
-                System.out.println(String.format("A subtração de  %d - %d = %d ", number, number2, result));
+                System.out.printf("A subtração de  %d - %d = %d %n", number, number2, result);
             }
             case 3 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number * number2;
-                System.out.println(String.format("A multiplicação de  %d * %d = %d ", number, number2, result));
+                System.out.printf("A multiplicação de  %d * %d = %d %n", number, number2, result);
             }
             case 4 -> {
                 number = getUserInput(input, "Primeiro número: ");
                 number2 = getUserInput(input, "Segundo número: ");
                 result = number / number2;
-                System.out.println(String.format("A divisão de  %d / %d = %d ", number, number2, result));
+                System.out.printf("A divisão de  %d / %d = %d %n", number, number2, result);
             }
             default -> System.out.println("Escolha inválida.");
         }
